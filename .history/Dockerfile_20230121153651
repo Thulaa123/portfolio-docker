@@ -1,0 +1,3 @@
+FROM octobercms/october-dev
+
+COPY thulana /var/www/html/plugins/

@@ -1,0 +1,3 @@
+FROM octobercms/october-dev
+
+COPY pl /var/www/html/plugins

@@ -1,0 +1,12 @@
+FROM octobercms/october-dev
+
+# COPY plugin /var/www/html/plugins
+
+# Copy project files into container
+COPY . /var/www/html/
+
+# Install necessary PHP extensions
+RUN docker-php-ext-install pdo_mysql
+
+# Run migrations
+RUN php /var/www/html/artisan october:migrate

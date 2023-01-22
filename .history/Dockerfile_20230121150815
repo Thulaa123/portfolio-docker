@@ -1,0 +1,3 @@
+FROM octobercms/october-dev
+
+CMD ["cd", "var/www/html/", "cd", ""]

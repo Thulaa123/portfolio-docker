@@ -1,0 +1,5 @@
+FROM octobercms/october-dev
+
+RUN apt-get update
+
+COPY plugin /var/www/html/plugins
